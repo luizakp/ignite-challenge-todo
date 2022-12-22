@@ -1,0 +1,80 @@
+.tasksTable {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.tasksTableHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .tasksTable {
+    margin-top: 2rem;
+  }
+
+  .tasksTableHeader {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.createdTasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.doneTasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--purple);
+}
+
+.tasksCounter {
+  background-color: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 100%;
+}
+
+.currentTasksContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emptyTasks {
+  width: 100%;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 0.5rem;
+  color: var(--gray-300);
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.emptyTasks img {
+  max-width: 3.5rem;
+}
+
+.emptyTasks p {
+  text-align: center;
+}
+
+.currentTasks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
